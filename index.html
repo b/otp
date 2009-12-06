@@ -1,0 +1,226 @@
+<html>
+<title>Currently in the 'pu' branch</title>
+<style type="text/css" media="all">
+    body {
+      width: 600px;
+    }
+</style>
+<body>
+<h1>Currently in the 'pu' branch</h1>
+<p>The comment about each topic branch is taken from the latest
+<em>What's cooking in erlang/otp</em> email and may no longer apply if
+the topic branch has been updated.
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/69ad0f3b3d7280f4d73a65f41a05ceae8f95018a">pg/fix-hipe-crash-in-gc_after_bif</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/8bbcecd938f46127bc40ff7aed91d4e519d0cd5b">Fix call to erts_gc_after_bif_call in hipe glue</a></li>
+</ul>
+<p><i>New topic branch</i>
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/582fb5fd1e818fbeeb7b13fc90fccba2cb7f0827">cg/docs-fixes</a> (erts, stdlib, tools):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/8381366aa3fbbe9383a4ff594bfaefa7168412cf">Linkify applications listed under "See Also"</a></li>
+<li><a href="http://github.com/erlang/otp/commit/731b8398e57f55459d4616b12775a3738517e2e5">Fix minor typos in the documentation</a></li>
+</ul>
+<p><i>New topic branch</i>
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/dbaea523b068a01764220e09e1b19f5323019ce9">ta/ensure-dot-ssh-exists</a> (ssh):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/5bc5325e565f679502b0a0736afa4e009ae0cb4f">ssh: ensure ~/.ssh exists</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/15182bbc6f3d01bcfec7d3c67d86c13557b77a44">km/pool_connect-to-running-nodes</a> (stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/a9f4cbcbc02b38f00bde3fa9ac7456702ac7675e">Change pool module to attempt to attach to nodes that are already running</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/60adbb688aceb043e594062695f0ba1f9521b42b">ph/auto_recognize_ipv6</a> (kernel):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/296b3ae4d88c87cdf9638a1dd9cab622c748c5e6">Add tests</a></li>
+<li><a href="http://github.com/erlang/otp/commit/8e415cb7094e9ea4287a56daaf227666f2862ed2">Let an 8-tuple given as ip_address() for gen_tcp/gen_udp/gen_sctp imply 'inet6'</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/09d698a735fae1cffba3d2b3420fa1744db2f13d">ms/fix-erl_call-overflow</a> (erl_interface):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/9d70687cc38cb45836e6f03013d5598129f47c69">erl_call: fix multiple buffer overflows</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/724ced2e198fbb2ea7a58d7d589a3ee2320c5a74">ml/add-os-pid-to-port-info</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/b2d85bfd38896f345cebd5ba352591fbb7d23019">Extend erlang:port_info/1,2 to show the OS pid of a spawned process</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/411bd87ae72bbe21133aa11e9c776212d2473257">rt/solaris-pty-handling-fixes</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/2ba48188534f4afafb4cba6cc384c0847f4e580e">Add corrected support for Solaris PTYs to run_erl</a></li>
+<li><a href="http://github.com/erlang/otp/commit/edfe4b9e94762fb48da2d533f83a0e7c095fad7a">Fix a typo that leads to syntax errors with DEBUG defined in run_erl</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/d8053eaf011e62b2302ce2802c74f3afb06a5c15">sa/callback-attr</a> (compiler, inets, kernel, otp, stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/b12de0a2d6b68a72124accc2b5a79fb8d33f0032">Add callback specs into 'application' module in kernel</a></li>
+<li><a href="http://github.com/erlang/otp/commit/2f271965e2af3d6437e02ac094b61ff8b226e4bb">Add callback specs to tftp module following internet documentation</a></li>
+<li><a href="http://github.com/erlang/otp/commit/cc249ece21a4bb105a869887d308423ce5d36423">Add callback specs to inets_service module following possibly deprecated comments</a></li>
+<li><a href="http://github.com/erlang/otp/commit/6df97f4d07fb1de93edd02418c4aeb5432bd50bd">Add '-callback' attributes in stdlib's behaviours</a></li>
+<li><a href="http://github.com/erlang/otp/commit/c864c174741ed5c36771c4bda991ea141ae266ba">Update primary bootstrap</a></li>
+<li><a href="http://github.com/erlang/otp/commit/5b455e866909fd99f91c357e16601fd6e2b8b18e">Automatical generation of 'behaviour_info' function from '-callback' attributes</a></li>
+<li><a href="http://github.com/erlang/otp/commit/2f6c340014864e5686b945c2473f84049b56f74e">Add '-callback' attribute to language syntax</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/8b36a0f0355061be8424e5381aa0e60eb51b564e">jn/gen_stream</a> (stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/b2386dff66c0f679101e649ccd639f6781814b93">Use erlang:process_info(Pid, links) to determine if gen_stream managed worker processes are leaked</a></li>
+<li><a href="http://github.com/erlang/otp/commit/f1d8a972ce7981819cc323ffd466f86a49617a6a">Move gen_stream internal process test to after termination of gen_stream parent</a></li>
+<li><a href="http://github.com/erlang/otp/commit/ac6cbba2784509f9ea92f91be2a3530eff9b52b6">Add calls to code loader in every test to verify code loader still running</a></li>
+<li><a href="http://github.com/erlang/otp/commit/38a4083a7a58481cd0d53acecf706c2800812929">Track gen_stream processes directly for accurate test results</a></li>
+<li><a href="http://github.com/erlang/otp/commit/7694a74dfa0595c97923ee5416d791c731a2fdfa">Patch dev to reproduce jn/gen_stream</a></li>
+</ul>
+<p>
+<font color="red">This topic branch introduces 2 lines with whitespace errors.</font>
+<p> . Add new gen_stream behaviour for efficiently consuming serial streams (65f3db8)
+
+<p>This topic branch has a failing test case:
+
+<p>shell_SUITE:start_restricted_from_shell;
+    We have now tested with and without this topic branch and when
+    it is present that test case fails. We consider it proved
+    to be guilty. The test case does not fail when run standalone
+    so it seems to be tricky... Also, some of its own test cases
+    fail sporadicly.
+
+<p>Action expected from: Topic author.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/bf08a6765a876fab6d89bbfd16196404b41eb353">sv/epmd-check-listen</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/c5c8baa686b2cd5c43ecbf40fbb47d04f200b552">check return value of epmd server listen() call</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/4797e31b1c76ab1c569f3014950e511753d18d19">gc/gen-format-status-improvements</a> (stdlib):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/95ed86fc9893460751c5141ff872bdc13814a273">Fix format_status bug for unregistered gen_event processes</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/fb64a0ddd83b95fbb3a82b32f8692c51fc3223f3">mk/net-dragonfly-bsd-patches</a> (asn1, common_test, erl_interface, erts, et, mnesia, reltool, runtime_tools, test_server, wx):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/88a04a19d751c4c6712fc9b079e16d3976a4d731">Remove unused variables</a></li>
+<li><a href="http://github.com/erlang/otp/commit/69600625564ab3338b2bb2cbbc83da1ae28d6813">Use proper install method</a></li>
+<li><a href="http://github.com/erlang/otp/commit/2008472c314e9ae78ee0044bb265c0d10e1aed31">Add support for DragonFly BSD</a></li>
+<li><a href="http://github.com/erlang/otp/commit/2fb2a1e0b6f85f87035d5b160c330cea584e01fd">Add support for NetBSD</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/84f986611922ba92995db9486a8f958a40330b70">sf/erts_de_busy_limit</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/67ed9ab1654b1fe5c41fddd5c74d1678a20297ae">Add flag-based setting for 'erts_de_busy_limit' constant</a></li>
+</ul>
+<p>This topic branch has multiple issues described in this email:
+
+<p>http://www.erlang.org/cgi-bin/ezmlm-cgi?3:mss:1303:201008:ldciadjdmjednikemjch
+
+<p>Action expected from: Topic author.
+
+<p>
+
+</li>
+<li><a href="http://github.com/erlang/otp/commit/8b0ca092ed22f69df70fada1e1f2cc7b32e83529">pg/honor-start-type-in-rel-files</a> (sasl):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/759990082fe2a6da918ddb9e8cbc14f68acaf242">Honor start type in .rel files when building relup files</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/823244bde687addab11218226a3a16d6275406f9">sb/make-files-like-erlc</a> (tools):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/5e9d05198cd00f74b99f697eb022ae0b2f31f136">Change make:files to behave more like erlc</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/273557fe8f7682e640d6174084f7aedd6cfaa774">uw/epmd-fullnames</a> (kernel):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/e0774bee2b75c56daa7288edc990488fa5c8d07e">Allow the erlang nodename host part to differ from the hostname</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/d2ddfefaa25d2d9803c5524edd14d7966744f229">ta/asn1-reporting</a> (asn1):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/93face25db7222e5c0e4950caaa8acbf6d9bc2dc">asn1ct: Make formatting of errors and warnings consistent</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/409f5820773f3c9e035ff6551c85febf6130cece">er/ei-decode_msg</a> (erl_interface):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/864091a37030eac122b4029377c05985338586fb">Add function to decode distribution header</a></li>
+</ul>
+<p>Needs documentation and test cases.
+
+<p>Action expected from: Topic author
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/d835c802e53391f9a69ac0ae06fa6cc7c920cb3c">jf/run_erl-disable-flow-control</a> (erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/d0775cd6bc64f5eec41d04e04441fe6a6e058927">Teach run_erl RUN_ERL_DISABLE_FLOWCNTRL for disabling flow control</a></li>
+</ul>
+<p></li>
+<li><a href="http://github.com/erlang/otp/commit/e825eb64080161a18629bec486f7240f4cd4e81c">kr/gs-browser</a> (gs):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/802d15915daf790b4ff60543526ba61283933ead">Change lib/gs/src/tool_utils.erl to select multiple browsers other than Netscape</a></li>
+</ul>
+<p>This topic branch introduces a new call to the deprecated regexp module.
+
+<p>Action expected from: Topic author or anyone else with an interest to
+advance the topic
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/a785a30a68a4ca619f6f9b4d01c2e26022736bea">bg/temp-hipe-fixes</a> (compiler, hipe, kernel):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/290bb309793f58a0da05801519920676fe48388c">Avoid crash by skipping compilation_SUITE:on_load/1</a></li>
+<li><a href="http://github.com/erlang/otp/commit/d505c72c1b3b254f02e12e6f88d6fcb095d2f115">Inline less aggressively for native-code compilation</a></li>
+<li><a href="http://github.com/erlang/otp/commit/df0669ede6d9148ca6f7ba43b81dc50d75358ba6">Crudely fix return type for the lists:key{search,find,member}/3</a></li>
+<li><a href="http://github.com/erlang/otp/commit/9e3a3f0be036b274009b39190a02dc44e1d9c749">seq_trace_SUITE: Don't native-compile</a></li>
+<li><a href="http://github.com/erlang/otp/commit/2446475ab7374966f11201bf222b8637ef662861">Disable native code if on_load is used</a></li>
+<li><a href="http://github.com/erlang/otp/commit/eed30d2c110fa73f6c7b7a1b2e48304392ae2daf">andor_SUITE: Don't native-compile</a></li>
+</ul>
+<p>This branch contains temporary workarounds to avoid failing test
+cases and is never intended to graduate.
+
+<p>
+</li>
+<li><a href="http://github.com/erlang/otp/commit/3ba43432f907a5efbd15868ede5df90775d96e18">jp/dependencies_makefile</a> (compiler, erts):
+
+<ul>
+<li><a href="http://github.com/erlang/otp/commit/434e2ca3a238fe07bcd327ace4d90618511a98b4">squash! eliminate dialyzer warning</a></li>
+<li><a href="http://github.com/erlang/otp/commit/bf2708d3b92705320679c51ace9d2c208d779298">squash! fix snprintf for Windows</a></li>
+<li><a href="http://github.com/erlang/otp/commit/7cbc4374a3621e26067c187ce36d3e75dfa70873">Add dependencies Makefile generation to erlc(1) and compile(3)</a></li>
+</ul>
+<p>Approved in principle by the OTP Technical Board; now awaits a closer
+review of the implementation.
+
+<p>Action expected from: Björn Gustavsson (the reviewer)
+
+<p>
+</li>
+</ul>
+</body>
+</html>
